@@ -11,14 +11,14 @@
  * 0x10001000 -- virtio disk
  * 0x80000000 -- where we load our kernel
 */
-//#define UART0 0x10000000L
-#define UART0 0xa00003f8L
+#define UART0 0x10000000L
+//#define UART0 0xa00003f8L
 
 #define CLINT_BASE 0x2000000L
 #define CLINT_MSIP(hartid) (CLINT_BASE + 8 * (hartid))
 #define CLINT_MTIMECMP(hartid) (CLINT_BASE + 0x4000 + 8 * (hartid))
 #define CLINT_MTIME (CLINT_BASE + 0xBFF8)
 
-#define CLINT_TIMEBASE_FREQ 0x100000
+#define CLINT_TIMEBASE_FREQ 0x1000000
 
 #endif

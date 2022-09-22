@@ -57,4 +57,6 @@ extern int task_create(void (*task)(void));
 extern void task_delay(volatile int count);
 extern void task_yield();
 
+extern int spin_lock(void);
+extern int spin_unlock(void);
 #endif
